@@ -154,28 +154,27 @@ Lambda timeout	Large dataset	Timeout error	Optimize query, use pagination or inc
             Invalid MongoDB credentials	Error logged in Lambda	Check CloudWatch error logs
             IAM permission issue	Upload fails	Observe AccessDenied error
             Large dataset	Lambda runs within timeout	Confirm execution time in logs
+
 9. Risks & Mitigations
-
-Lambda dependency size limit exceeded → Use external layer
-
-Data sensitivity → Use encrypted S3 bucket and secure credentials
-
-Event trigger misconfiguration → Test end-to-end before demo
+==============================================
+            Lambda dependency size limit exceeded → Use external layer
+            Data sensitivity → Use encrypted S3 bucket and secure credentials
+            Event trigger misconfiguration → Test end-to-end before demo
 
 10. Next Steps
-
-Integrate React UI for manual upload and visualization
-
-Automate pipeline using AWS Step Functions
-
-Add DynamoDB for metadata storage
-
-Extend to multiple file formats (CSV, JSON)
+==============================================
+            Integrate React UI for manual upload and visualization
+            
+            Automate pipeline using AWS Step Functions
+            
+            Add DynamoDB for metadata storage
+            
+            Extend to multiple file formats (CSV, JSON)
 
 11. Appendix
-
-AWS Region: ap-south-1 (Mumbai)
-
-S3 Bucket Example: employee-data-bucket-demo
-
-Lambda Names: lambda-fetch-employee, lambda-on-upload-trigger
+==============================================
+      AWS Region: ap-south-1 (Mumbai)
+      
+      S3 Bucket Example: employee-data-bucket-demo
+      
+      Lambda Names: lambda-fetch-employee, lambda-on-upload-trigger
